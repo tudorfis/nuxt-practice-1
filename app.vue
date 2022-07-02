@@ -26,7 +26,7 @@
     gender: Gender.GIRL,
     length: Length.SHORT,
     popularity: Popularity.TRENDY,
-  });
+  })
 </script>
 
 <template>
@@ -37,13 +37,22 @@
       <div class="option-container">
         <h4>1) Choose a gender</h4>
         <div class="option-buttons">
-          <button class="option option-left" :class="options.gender === Gender.BOY && 'option-active'">
+          <button
+            class="option option-left"
+            :class="options.gender === Gender.BOY && 'option-active'"
+          >
             Boy
           </button>
-          <button class="option" :class="options.gender === Gender.UNISEX && 'option-active'">
+          <button
+            class="option"
+            :class="options.gender === Gender.UNISEX && 'option-active'"
+          >
             Unisex
           </button>
-          <button class="option option-right" :class="options.gender === Gender.GIRL && 'option-active'">
+          <button
+            class="option option-right"
+            :class="options.gender === Gender.GIRL && 'option-active'"
+          >
             Girl
           </button>
         </div>
@@ -51,10 +60,16 @@
       <div class="option-container">
         <h4>2) Choose the name's popularity</h4>
         <div class="option-buttons">
-          <button class="option option-left" :class="options.popularity === Popularity.TRENDY && 'option-active'">
+          <button
+            class="option option-left"
+            :class="options.popularity === Popularity.TRENDY && 'option-active'"
+          >
             Trendy
           </button>
-          <button class="option option-right" :class="options.popularity === Popularity.UNIQUE && 'option-active'">
+          <button
+            class="option option-right"
+            :class="options.popularity === Popularity.UNIQUE && 'option-active'"
+          >
             Unique
           </button>
         </div>
@@ -62,13 +77,22 @@
       <div class="option-container">
         <h4>2) Choose name's length</h4>
         <div class="option-buttons">
-          <button class="option option-left" :class="options.length === Length.LONG && 'option-active'">
+          <button
+            class="option option-left"
+            :class="options.length === Length.LONG && 'option-active'"
+          >
             Long
           </button>
-          <button class="option" :class="options.length === Length.ALL && 'option-active'">
+          <button
+            class="option"
+            :class="options.length === Length.ALL && 'option-active'"
+          >
             All
           </button>
-          <button class="option option-right" :class="options.length === Length.SHORT && 'option-active'">
+          <button
+            class="option option-right"
+            :class="options.length === Length.SHORT && 'option-active'"
+          >
             Short
           </button>
         </div>
